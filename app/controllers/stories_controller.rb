@@ -1,6 +1,6 @@
 class StoriesController < ApplicationController
     before_action :authenticate_user!
-    before_action :find_story, only: [:edit, :update, :destory]
+    before_action :find_story, only: [:edit, :update, :destroy]
 
     def index
         @stories = current_user.stories.order(created_at: :desc)
@@ -31,6 +31,11 @@ class StoriesController < ApplicationController
         else
             render :edit
         end
+    end
+
+    def destroy
+        @story.destroy
+        redirect_to stories_path, notice: '削除しました'
     end
 
     private
