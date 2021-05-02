@@ -13,7 +13,8 @@ class StoriesController < ApplicationController
 
     def create
         @story = current_user.stories.new(story_params)
-        @story.status = 'published' if params[:publish]
+        # @story.status = 'published' if params[:publish]
+        @story.publish! if params[:publish]
 
         if @story.save
             if params[:publish]
@@ -33,7 +34,16 @@ class StoriesController < ApplicationController
    
     def update
         if @story.update(story_params)
-            redirect_to stories_path, notice: '記事を更新しました'
+            case 
+            when params[:publish]
+                @story.publish!
+                redirect_to stories_path, notice: '記事を投稿しました'
+            when params[:unpublish]
+                @story.unpublish!
+                redirect_to stories_path, notice: '記事を下書きしました'
+            else
+                redirect_to edit_story_path(@story), notice: '記事を保存しました'
+            end
         else
             render :edit
         end
