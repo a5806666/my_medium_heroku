@@ -5,7 +5,7 @@ class StoriesController < ApplicationController
     def index
         @stories = current_user.stories.order(created_at: :desc)
     end
-
+    
     def new
         # @story = Story.new
         @story = current_user.stories.new
@@ -13,9 +13,15 @@ class StoriesController < ApplicationController
 
     def create
         @story = current_user.stories.new(story_params)
+        @story.status = 'published' if params[:publish]
 
         if @story.save
-            redirect_to stories_path, notice: '完了しました'
+            if params[:publish]
+                redirect_to stories_path, notice: '記事を投稿しました'
+            else
+                redirect_to edit_story_path(@story), notice: '記事を保存しました'
+            end
+            
         else
             render :new
         end
@@ -24,10 +30,10 @@ class StoriesController < ApplicationController
     def edit
         # @story = current_user.stories.find(params[:id])
     end
-
+   
     def update
         if @story.update(story_params)
-            redirect_to stories_path, notice: '更新しました'
+            redirect_to stories_path, notice: '記事を更新しました'
         else
             render :edit
         end
@@ -35,7 +41,7 @@ class StoriesController < ApplicationController
 
     def destroy
         @story.destroy
-        redirect_to stories_path, notice: '削除しました'
+        redirect_to stories_path, notice: '記事を削除しました'
     end
 
     private
