@@ -4,6 +4,7 @@ class StoriesController < ApplicationController
 
     def index
         @stories = current_user.stories.order(created_at: :desc)
+        @stories = current_user.stories.page(params[:page]).per(4).order(created_at: :desc)
     end
     
     def new
