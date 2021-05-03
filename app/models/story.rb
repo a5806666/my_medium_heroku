@@ -2,12 +2,14 @@ class Story < ApplicationRecord
   belongs_to :user
   validates :title, presence: true
 
+  # 查詢功能
   default_scope { where(deleted_at: nil) }
 
   def destroy
     update(deleted_at: Time.now)
   end
 
+  # AASM
   include AASM
   aasm(column: 'status', no_direct_assignment: true ) do
     state :draft, initial: true
@@ -20,5 +22,21 @@ class Story < ApplicationRecord
     event :unpublish do
       transitions from: :published, to: :draft
     end
+  end
+
+  # FriendlyId & babosa(亂碼轉中)
+  extend FriendlyId
+  friendly_id :slug_candidate, use: :slugged
+
+  def normalize_friendly_id(input)
+    input.to_s.to_slug.normalize(transliterations: :russian).to_s
+  end
+
+  private
+  def slug_candidate
+    [
+      :title,
+      [:title, SecureRandom.hex[0, 8]]
+    ]
   end
 end
