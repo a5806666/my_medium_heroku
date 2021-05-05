@@ -1,14 +1,15 @@
 class Story < ApplicationRecord
   belongs_to :user
-  validates :title, presence: true
   has_one_attached :cover_image
+  acts_as_paranoid
+  validates :title, presence: true
+  
 
-  # 查詢功能
-  default_scope { where(deleted_at: nil) }
-
-  def destroy
-    update(deleted_at: Time.now)
-  end
+  # 查詢功能 gem paranoid取代
+  # default_scope { where(deleted_at: nil) } 
+  # def destroy
+  #   update(deleted_at: Time.now)
+  # end
 
   # AASM
   include AASM
