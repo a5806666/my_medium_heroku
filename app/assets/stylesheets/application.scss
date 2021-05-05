@@ -1,4 +1,11 @@
 /*
  *= require bulma/bulma.css
  *= require_self
+ *= require stories
  */
+
+ .navbar-link{
+    .user-avatar{
+        border-radius: 50%;
+    }
+  }
