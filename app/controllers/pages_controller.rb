@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-    
+    before_action :find_story, only: [:show]
     def index
         # @stories = Story.all.order(created_at: :desc).includes(:user)
         # @stories = Story.where(status: 'published').order(created_at: :desc).includes(:user)
@@ -9,10 +9,15 @@ class PagesController < ApplicationController
     end
 
     def show
-        # @story = current_user.stories.find(params[:id])
+        
     end
 
     def user
 
+    end
+
+    private
+    def find_story
+        @story = Story.friendly.find(params[:story_id])
     end
 end
