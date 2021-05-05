@@ -1,6 +1,7 @@
 class Story < ApplicationRecord
   belongs_to :user
   validates :title, presence: true
+  has_one_attached :cover_image
 
   # 查詢功能
   default_scope { where(deleted_at: nil) }

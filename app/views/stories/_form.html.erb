@@ -6,6 +6,12 @@
 
 <%= form_for(story) do |form| %>
     <div class="field">
+        <%= form.label :cover_image, '記事画像' %><br>
+        <%= form.file_field :cover_image %>
+        <%= image_tag story.cover_image.variant(resize: '800x600'), class: 'cover_image' if story.cover_image.attached? %>
+    </div>
+
+    <div class="field">
         <%= form.label :title, '記事タイトル'  %>
         <%= form.text_field :title, class: 'input is-primary is-medium' %>
     </div>
