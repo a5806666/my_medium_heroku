@@ -78,17 +78,23 @@
       <section class="columns">
         <!-- article list -->
         <section class="column is-two-thirds">
-            <% @stories.each do |story| %>
+            <h2 class="title is-4 has-text-primary">最新記事一覧</h2>
+            <hr>
+            <% @stories.first(10).each do |story| %>
                 <article class="media">
                     <div class="media-content">
                         <h2 class="title is-4"> <%= link_to story.title, story_page_path(story.user.username, story), class: 'has-text-grey-dark' %> </h2>
-                        <p class="content"> <%= story.content %> </p>
+                        <p class="content"> <%= strip_tags(story.content).truncate(200) %> </p>
                         <footer>
                             <p><%= link_to story.user.username, user_page_path(story.user.username, story), class: 'has-text-grey-dark' %> | <%= time_ago_in_words(story.created_at) %></p>
                         </footer>
                     </div>
                     <figure class="media-right">
-                        <img src="https://fakeimg.pl/150x150/">
+                        <% if story.cover_image.attached? %>
+                          <%= image_tag story.cover_image.variant(resize: '150x150') %>
+                        <% else %>
+                          <img src="https://fakeimg.pl/150x150/">
+                        <% end %>
                     </figure>
                 </article>
             <% end %>
@@ -96,58 +102,22 @@
         <!-- article list -->
 
         <section class="column">
-          <h2 class="title is-4">Popular on Medium</h2>
+          <h2 class="title is-4 has-text-primary">ランダム記事一覧</h2>
           <hr>
-
-          <article class="media">
-            <div class="media-left">01</div>
-            <div class="media-content">
-              <h3>Difficult Conversation Lessons From a Psychologist Who’s Been Dealing With People</h3>
-              <footer>
-                <p>Thomas Oppong</p>
-              </footer>
-            </div>
-          </article>
-
-          <article class="media">
-            <div class="media-left">02</div>
-            <div class="media-content">
-              <h3>Difficult Conversation Lessons From a Psychologist Who’s Been Dealing With People</h3>
-              <footer>
-                <p>Thomas Oppong</p>
-              </footer>
-            </div>
-          </article>
-
-          <article class="media">
-            <div class="media-left">03</div>
-            <div class="media-content">
-              <h3>Difficult Conversation Lessons From a Psychologist Who’s Been Dealing With People</h3>
-              <footer>
-                <p>Thomas Oppong</p>
-              </footer>
-            </div>
-          </article>
-
-          <article class="media">
-            <div class="media-left">04</div>
-            <div class="media-content">
-              <h3>Difficult Conversation Lessons From a Psychologist Who’s Been Dealing With People</h3>
-              <footer>
-                <p>Thomas Oppong</p>
-              </footer>
-            </div>
-          </article>
-
-          <article class="media">
-            <div class="media-left">05</div>
-            <div class="media-content">
-              <h3>Difficult Conversation Lessons From a Psychologist Who’s Been Dealing With People</h3>
-              <footer>
-                <p>Thomas Oppong</p>
-              </footer>
-            </div>
-          </article>
+            <% @stories.sample(@range).each do |story| %>
+              <article class="media">   
+                <div class="media-left">
+                  <i class="fas fa-book has-text-dark"></i>
+                </div>
+              <div class="media-content">
+                <p class="title is-5"><%= link_to story.title, story_page_path(story.user.username, story), class: 'has-text-grey-dark' %></p>
+                <footer>
+                  <p class="content has-text-grey"><%= strip_tags(story.content).truncate(50) %></p>
+                </footer>
+              </div>
+            </article>
+          <% end %>
+          </section>
         </section>
       </section>
     </div>
