@@ -4,5 +4,5 @@ class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :story
 
-  validates :content, presence: ture
+  validates :content, presence: true
 end
