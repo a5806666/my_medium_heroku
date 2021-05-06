@@ -70,6 +70,15 @@ form{
         padding: 1em 1.4em;
         margin-top: 8px;
         margin-bottom: 1em;
+        img {
+          border-radius: 50px;
+          margin-bottom: 2px;
+        }
+        p {
+          margin-top: 2px;
+          border-top: solid lightgray 1px;
+          color: darkslategrey;
+        }
       }
     }
   }
