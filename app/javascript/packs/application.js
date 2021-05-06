@@ -12,3 +12,5 @@ import "@fortawesome/fontawesome-free/css/all.min.css"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+console.log("test");
