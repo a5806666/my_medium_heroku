@@ -5,7 +5,7 @@ class PagesController < ApplicationController
         # @stories = Story.where(status: 'published').order(created_at: :desc).includes(:user)
         @stories = Story.published.with_attached_cover_image.order(created_at: :desc).includes(:user)
         @range = 10
-
+        @clap = Story.order(clap: :desc)
     end
 
     def show

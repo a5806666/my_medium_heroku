@@ -12,6 +12,3 @@ import "controllers"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
-
-console.log("test");
-
