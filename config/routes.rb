@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   }
   
   namespace :api do
+
     resources :users, only: [] do
       member do
         post :follow
@@ -13,8 +14,11 @@ Rails.application.routes.draw do
     resources :stories, only: [] do
       member do
         post :clap
+        # /api/stories/story_id/bookmark(書籤)
+        post :bookmark
       end
     end
+
   end
   
 

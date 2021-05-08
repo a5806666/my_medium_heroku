@@ -1,6 +1,7 @@
 class Story < ApplicationRecord
   belongs_to :user
   has_many :comments
+  has_many :bookmarks
   has_one_attached :cover_image
   acts_as_paranoid
   validates :title, presence: true
