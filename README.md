@@ -6,7 +6,7 @@
 
 ---
 
-## 関連リンク & サンプルアカウント
+## 関連リンク
 
 | タイトル　　　　　　　　　　　　| リンク　　　　　　　　　　　|
 | --------------------------|:------------------------ |
@@ -18,12 +18,12 @@
 [blog]: http://translate.google.com/translate?hl=en&sl=zh-CN&tl=ja&u=https%3A%2F%2Fhackmd.io%2F%407beedhBrQk2FjyAtSY5wxQ&sandbox=1
 [オンライン講座]: http://translate.google.com/translate?hl=en&sl=zh-CN&tl=ja&u=https%3A%2F%2Fcampus.5xruby.tw%2Fp%2Fcoding
 
-| サンプルアカウント |  | 
+| サンプル | アカウント | 
 | -------- | -------- | 
 | アカウント | sample@gmail.com | 
 | パスワード | 11111111 | 
 
-| クレジットカード |  | 
+| サンプル | クレジットカード | 
 | -------- | -------- | 
 | カード番号 | 4111 1111 1111 1111 | 
 | 有効期限 | 02 / 22 | 
