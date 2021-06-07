@@ -12,7 +12,7 @@
 | --------------------------|:------------------------ |
 | <font color="red" size="4">**ホームページ**</font>　　　　　　　　　　|　[:link:][homepage]　　|
 | 私のブログ（中国語）　　　　　　|　[:link:][blog]　　　　　　|
-| 勉強したオンライン講座（中国語）|　[:link:][オンライン講座]　　|
+| 受講したオンライン講座（中国語）|　[:link:][オンライン講座]　　|
 
 [homepage]: https://whispering-citadel-92558.herokuapp.com/
 [blog]: http://translate.google.com/translate?hl=en&sl=zh-CN&tl=ja&u=https%3A%2F%2Fhackmd.io%2F%407beedhBrQk2FjyAtSY5wxQ&sandbox=1
@@ -47,17 +47,17 @@
 
 ---
 ## 機能一覧、使用したgemなど
-* ユーザー登録機能、ログイン機能([devise](https://hackmd.io/nYCmlVBYTgGy4vYKYyr-Gw))
-    * アカウント管理機能(devise)
-        * パスワードの変更、ユーザー名を設定する、プロフィール画像をアップロード([Active Storage](https://hackmd.io/@7beedhBrQk2FjyAtSY5wxQ/SyHnoXCwd))
+* ユーザー登録機能、ログイン機能（[devise](https://hackmd.io/nYCmlVBYTgGy4vYKYyr-Gw)）
+    * アカウント管理機能（devise）
+        * パスワードの変更、ユーザー名を設定する、プロフィール画像をアップロード（[Active Storage](https://hackmd.io/@7beedhBrQk2FjyAtSY5wxQ/SyHnoXCwd)）
     * 記事一覧機能
-        * 記事を再編集．公開をキャンセル([AASM](https://github.com/aasm/aasm))、記事を削除([paranoia](https://github.com/rubysherpas/paranoia))
-        * ページネーション機能([Kaminari](https://qiita.com/residenti/items/1ae1e5ceb59c0729c0b9))
-    * 会員になる機能(**決済するだけです**)([braintree-sandbox](https://developers.braintreepayments.com/start/overview))
-* 記事を書く機能(AASM)
-    * 記事画像をアップロード(Active Storage)
-* 記事にコメントを付ける機能(Ajax)
-    * いいね機能(Ajax)
-        * ホームページ(人気記事ランキング)
+        * 記事を再編集．公開をキャンセル（[AASM](https://github.com/aasm/aasm)）、記事を削除（[paranoia](https://github.com/rubysherpas/paranoia)）
+        * ページネーション機能（[Kaminari](https://qiita.com/residenti/items/1ae1e5ceb59c0729c0b9)）
+    * 会員登録機能（**決済するのみです**）（[braintree-sandbox](https://developers.braintreepayments.com/start/overview)）
+* 記事を書く機能（AASM）
+    * 記事画像をアップロード（Active Storage）
+* 記事にコメントを付ける機能（Ajax）
+    * いいね機能（Ajax）
+        * ホームページ（人気記事ランキング）
   
         
