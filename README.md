@@ -1,14 +1,13 @@
 # [MyMedium](https://whispering-citadel-92558.herokuapp.com/)
 <!-- ###### tags: `github`  -->
-<font size="4">**アプリケーション概要：**</font>
+<font size="5">**アプリケーション概要：**</font>
 
 複数枚の写真を、位置情報つきで投稿できるサービスです。 就職活動用のポートフォリオとして制作致しました。
 
 
 ---
 
-<font size="4">**URL：**</font>
-https://whispering-citadel-92558.herokuapp.com/
+<font size="5">**URL：**</font>https://whispering-citadel-92558.herokuapp.com/
 
 
 ![](https://i.imgur.com/3Ovd1lX.png)
@@ -17,6 +16,14 @@ https://whispering-citadel-92558.herokuapp.com/
 
 ## 関連リンク
 
+| テスト用 | | 
+| -------- | -------- | 
+| アカウント | sample@gmail.com | 
+| パスワード | 11111111 | 
+| **テスト用** |  | 
+| カード番号 | 4111 1111 1111 1111 | 
+| 有効期限 | 02 / 22 | 
+
 | タイトル　　　　　　　　　　　　| リンク　　　　　　　　　　　|
 | --------------------------|:------------------------ |
 | 私のブログ（中国語）　　　　　　|　[:link:][blog]　　　　　　|
@@ -24,17 +31,6 @@ https://whispering-citadel-92558.herokuapp.com/
 
 [blog]: http://translate.google.com/translate?hl=en&sl=zh-CN&tl=ja&u=https%3A%2F%2Fhackmd.io%2F%407beedhBrQk2FjyAtSY5wxQ&sandbox=1
 [オンライン講座]: http://translate.google.com/translate?hl=en&sl=zh-CN&tl=ja&u=https%3A%2F%2Fcampus.5xruby.tw%2Fp%2Fcoding
-
-| テスト用 | アカウント | 
-| -------- | -------- | 
-| アカウント | sample@gmail.com | 
-| パスワード | 11111111 | 
-
-| テスト用 | クレジットカード | 
-| -------- | -------- | 
-| カード番号 | 4111 1111 1111 1111 | 
-| 有効期限 | 02 / 22 | 
-
 
 ---
 
