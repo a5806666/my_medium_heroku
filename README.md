@@ -1,20 +1,20 @@
 # [MyMedium](https://whispering-citadel-92558.herokuapp.com/)
 <!-- ###### tags: `github`  -->
-<font size="5">**アプリケーション概要：**</font>
+<font size="6">**アプリケーション概要：**</font>
 
 複数枚の写真を、位置情報つきで投稿できるサービスです。 就職活動用のポートフォリオとして制作致しました。
 
 
 ---
 
-<font size="5">**URL：**</font>https://whispering-citadel-92558.herokuapp.com/
+<font size="6">**URL：**</font>https://whispering-citadel-92558.herokuapp.com/
 
 
 ![](https://i.imgur.com/3Ovd1lX.png)
 
 ---
 
-## 関連リンク
+## テスト用アカウント　＆　関連リンク
 
 | テスト用 | | 
 | -------- | -------- | 
