@@ -1,13 +1,13 @@
 # [MyMedium](https://whispering-citadel-92558.herokuapp.com/)
 <!-- ###### tags: `github`  -->
-<font size="6">**アプリケーション概要：**</font>
+<font size="4">**アプリケーション概要：**</font>
 
 複数枚の写真を、位置情報つきで投稿できるサービスです。 就職活動用のポートフォリオとして制作致しました。
 
 
 ---
 
-<font size="6">**URL：**</font>https://whispering-citadel-92558.herokuapp.com/
+<font size="4">**URL：**</font>https://whispering-citadel-92558.herokuapp.com/
 
 
 ![](https://i.imgur.com/3Ovd1lX.png)
@@ -16,7 +16,7 @@
 
 ## テスト用アカウント　＆　関連リンク
 
-| テスト用 | | 
+| テスト用 |  | 
 | -------- | -------- | 
 | アカウント | sample@gmail.com | 
 | パスワード | 11111111 | 
@@ -57,10 +57,10 @@
         * 記事を再編集．公開をキャンセル（[AASM](https://github.com/aasm/aasm)）、記事を削除（[paranoia](https://github.com/rubysherpas/paranoia)）
         * ページネーション機能（[Kaminari](https://qiita.com/residenti/items/1ae1e5ceb59c0729c0b9)）
     * 会員登録機能（**決済するのみです**）（[braintree-sandbox](https://developers.braintreepayments.com/start/overview)）
-* 記事を書く機能（AASM）
+* 記事を投稿する機能（AASM）
     * 記事画像をアップロード（Active Storage）
 * 記事にコメントを付ける機能（Ajax）
     * いいね機能（Ajax）
-        * ホームページ（人気記事ランキング）
+        * 人気記事ランキング機能（ホームページ）
   
         
