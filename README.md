@@ -13,9 +13,11 @@
 
 <font size="4">**作成した目的：**</font>
 ```markdown
-透過Ruby on Rsils來建立部落格過程中、初步了解..........................。
+透過Ruby on Rails來建立部落格過程中，初步了解了
 
-在使用現有的CSS/HTML框架還有gem與來製作頁面設計、。
+路徑與路徑如何做連結、Gem的相關使用方法、資料庫的建立相關規則。
+
+在這次的專案中我學會了。
 
 * 頁面設計
 * 會員系統建置
@@ -24,11 +26,17 @@
 
 ```
 ---
+## 使い方の紹介
+### トップ画面
+```markdown
+記事リストが一覧で表示されている、気に入りる記事の下にコメントやいいね付くことができます。
+```
+![](https://i.imgur.com/uaFTm4M.gif)
 
-<font size="4">**URL：**</font><font size="4">**https://whispering-citadel-92558.herokuapp.com/**</font>
+---
 
-
-![](https://i.imgur.com/3Ovd1lX.png)
+## URL：
+<font size="4">**https://whispering-citadel-92558.herokuapp.com/**</font>
 
 ---
 
