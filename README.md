@@ -67,8 +67,6 @@ Railsの仕組みと知識、MVCモデル、Railsのルーターなど徐々に�
 * CSS/bulma
 * GitHub
 * Sourcetree
----
-## インフラ
 * Heroku
 * AWS
     * S3
