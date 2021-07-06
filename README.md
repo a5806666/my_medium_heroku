@@ -1,5 +1,5 @@
 # [MyMedium](https://whispering-citadel-92558.herokuapp.com/)
-<!-- ###### tags: `github`  -->
+###### tags: `github` 
 <font size="4">**アプリケーション概要：**</font>
 
 ```markdown
@@ -20,7 +20,7 @@ Ruby on Railsを通してアプリを作成しているうちに、
 Railsの仕組みと知識、MVCモデル、Railsのルーターなど徐々に使い方を理解してきました。
 ```
 ---
-## 使い方の紹介
+## 使い方の紹介 ／ URL：<font size="4">**https://whispering-citadel-92558.herokuapp.com/**</font>
 ### トップ画面
 ```markdown
 記事リストが一覧で表示されている、気に入りる記事の下にコメントやいいね付くことができます。
@@ -33,12 +33,6 @@ Railsの仕組みと知識、MVCモデル、Railsのルーターなど徐々に�
 記事一覧：記事を再編集、公開をキャンセル、記事を削除。
 ```
 ![](https://i.imgur.com/fhdY7cv.gif)
-
-
----
-
-## URL：
-<font size="4">**https://whispering-citadel-92558.herokuapp.com/**</font>
 
 ---
 
