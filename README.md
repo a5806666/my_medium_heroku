@@ -19,20 +19,6 @@
 Ruby on Railsを通してアプリを作成しているうちに、
 Railsの仕組みと知識、MVCモデル、Railsのルーターなど徐々に使い方を理解してきました。
 ```
----
-## 使い方の紹介 ／ URL：<font size="4">**https://whispering-citadel-92558.herokuapp.com/**</font>
-### トップ画面
-```markdown
-記事リストが一覧で表示されている、気に入りる記事の下にコメントやいいね付くことができます。
-```
-![](https://i.imgur.com/uaFTm4M.gif)
-### アカウント管理 ＆ 記事一覧 画面
-```markdown
-アカウント管理：アカウントに関するパスワード、ユーザー名、画像など変更を行います。
-
-記事一覧：記事を再編集、公開をキャンセル、記事を削除。
-```
-![](https://i.imgur.com/fhdY7cv.gif)
 
 ---
 
@@ -57,6 +43,21 @@ Railsの仕組みと知識、MVCモデル、Railsのルーターなど徐々に�
 [オンライン講座]: http://translate.google.com/translate?hl=en&sl=zh-CN&tl=ja&u=https%3A%2F%2Fcampus.5xruby.tw%2Fp%2Fcoding
 
 ---
+## 使い方の紹介 ／ URL：<font size="4">**https://whispering-citadel-92558.herokuapp.com/**</font>
+### トップ画面
+```markdown
+記事リストが一覧で表示されている、気に入りる記事の下にコメントやいいね付くことができます。
+```
+![](https://i.imgur.com/uaFTm4M.gif)
+### アカウント管理 ＆ 記事一覧 画面
+```markdown
+アカウント管理：アカウントに関するパスワード、ユーザー名、画像など変更を行います。
+
+記事一覧：記事を再編集、公開をキャンセル、記事を削除。
+```
+![](https://i.imgur.com/fhdY7cv.gif)
+
+---
 
 ## 使用技術
 * Ruby 2.6.7
@@ -66,7 +67,6 @@ Railsの仕組みと知識、MVCモデル、Railsのルーターなど徐々に�
 * Stimulus
 * CSS/bulma
 * GitHub
-* Sourcetree
 * Heroku
 * AWS
     * S3
